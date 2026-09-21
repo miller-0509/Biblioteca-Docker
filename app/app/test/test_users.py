@@ -154,4 +154,4 @@ def test_read_qr_missing_id(client, user):
         'qr_image': (buf, 'qr.png')
     }, content_type='multipart/form-data')
     assert response.status_code == 400
-    assert b"No contiene un ID de usuario" in response.data
+    assert b"no contiene un ID de usuario" in response.data
